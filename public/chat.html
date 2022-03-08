@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Whatsapp</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>Whatsapp</h1>
+        <a id="leave-btn" class="btn">Salir de la sala</a>
+      </header>
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          <h3>Sala:</h3>
+          <h2 id="room-name"></h2>
+          <h3>Usuarios</h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input id="msg" type="text" placeholder="Escribe aqui tu mensaje" required autocomplete="off" />
+          <button class="btn">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!--llama al script de cloudflare para cargar los datos-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Whatsapp</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1>Whatsapp</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Usuario</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Sala de chat</label>
+						<select name="room" id="room">
+							<option value="Chat1">Chat1</option>
+							<option value="Chat2">Chat2</option>
+							<option value="Chat3">Chat3</option>
+						</select>
+					</div>
+					<div>
+						<label for="avatar">Avatar</label>
+						<input type="radio" name="avatar" value="1.png"><img width="100px" height="100px" src="1.png">
+						<br>
+						<input type="radio" name="avatar" value="2.jpg"><img width="100px" height="100px" src="2.jpg">
+					</div>
+					<button type="submit" class="btn">Entrar al chat</button>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
